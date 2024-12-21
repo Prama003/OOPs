@@ -1,7 +1,11 @@
 #include<bits/stdc++.h>
 #include<string>
 using namespace std;
-class Employee{
+class AbstractEmployee
+{
+    virtual void askforpromotion()=0;
+};
+class Employee: AbstractEmployee{
     public:
     string name;
     string company;
